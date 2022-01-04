@@ -37,7 +37,7 @@ export default function PedidoCadastro({ navigation }) {
     });
 
     const [cliente, setCliente] = useState(null);
-    const [produtos, setProdutos] = useState([]);
+    const [produtos, setProdutos] = useState(null);
 
     function PedidoCadastroProduto() {
 
@@ -126,21 +126,23 @@ export default function PedidoCadastro({ navigation }) {
             return (
                 <View>
                     {produto.produtoImagem ?
-                      <Avatar.Image 
-                      size={50} 
-                      style={{
-                          marginRight:50,
-                        backgroundColor:'white'}}
-                      source={{
-                        uri:produto.produtoImagem.arquivoBase64}} />
-                    :
-                    <Avatar.Icon {...props}
-                        size={60}
-                        style={{ backgroundColor: '#e7eff3' }}
-                        icon="package-variant" />
-                    
+                        <Avatar.Image
+                            size={50}
+                            style={{
+                                marginRight: 50,
+                                backgroundColor: 'white'
+                            }}
+                            source={{
+                                uri: produto.produtoImagem.arquivoBase64
+                            }} />
+                        :
+                        <Avatar.Icon {...props}
+                            size={60}
+                            style={{ backgroundColor: '#e7eff3' }}
+                            icon="package-variant" />
+
                     }
-                        </View>
+                </View>
             )
         }
         return (
