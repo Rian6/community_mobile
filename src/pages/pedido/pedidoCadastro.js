@@ -37,7 +37,7 @@ export default function PedidoCadastro({ navigation }) {
     });
 
     const [cliente, setCliente] = useState(null);
-    const [produtos, setProdutos] = useState(null);
+    const [produtos, setProdutos] = useState([]);
 
     function PedidoCadastroProduto() {
 
