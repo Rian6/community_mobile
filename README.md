@@ -34,6 +34,10 @@ Entre na pasta do projeto usando
 
 ```cd/diretorio_do_arquivo```
 
+Para instalar o expo
+
+```npm install --global expo-cli```
+
 Rode o comando para atualizar os pacotes do node dentro da pasta do projeto
 
 ```npm i```
